@@ -1,0 +1,37 @@
+routes: 
+GET /api/query/tablename? => {
+   fields: [] // compulsary -- check if the fields are accessible,
+   limit?:
+   page?: // if limit 
+}
+
+POST /api/save/tablename =>  body => {
+    data: 
+    id?:
+    fields?: // to return  
+}
+
+POST /api/delete/tablename => body => {
+    id
+}
+
+POST /auth/me 
+POST /user/edit
+POST /auth/login
+POST /auth/register
+POST /user/addReadingList {
+    readinglist_id,
+    user_id
+}
+POST /readingList/addItem {
+    readingList_id,
+    user_id,
+    book_id
+}
+POST /readingList/removeItem {
+    readingList_id,
+    user_id,
+    book_id
+}
+
+GET /user/logout
