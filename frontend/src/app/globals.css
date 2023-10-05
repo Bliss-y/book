@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+}
+* {
+  box-sizing: border-box;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+.map-container {
+  height: 400px;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
